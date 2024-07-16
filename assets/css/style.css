@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(/assets/css/root.css);
+*{
+    margin: 0;
+    text-decoration: none ;
+    list-style-type: none;
+    padding: 0;
+}
+
+.head-bg{
+    background-image: url('/assets/images/webp/header-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.head-bg::after{
+position: absolute;
+background: linear-gradient(179.27deg, #1643C3 0.63%, #000000 175.69%);
+opacity: 74%;
+bottom: 0;
+    content: "";
+    top:0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: color;
+}
+.bull-bg{
+    background-image: url('/assets/images/webp/bull-and-bear.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+}
+.blue-bg{
+    background-image: url('/assets/images/webp/blue-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.innovation-card{
+    max-width: 335px;
+    padding: 17.24px 19.01px 31px;
+    background: linear-gradient(124.24deg, rgba(19, 245, 255, 0.25) 7.19%, rgba(0, 66, 255, 0) 93.2%);
+    box-shadow: 0px 4px 41px 0px #4281EE70;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.innovation-card::after{
+content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  background: linear-gradient(214.55deg, #1643C3 2.85%, #9AB3F9 116.27%)border-box;
+  mask: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card-circle{
+    width: 213.76px;
+    height: 213.76px;
+    border-radius: 100%;
+    background-color: #1643C380;
+}
+.innovation-tag{
+    padding: 12px 11px;
+    background-color: #6C67F133;
+    border-radius: 8px;
+}
+.opacity-80{
+    opacity: 80%;
+}
+.nav-btn{
+    border: 1px solid var(--bs-blue)
+}
+.img-transform{
+    transform: translate(-89px, -40px);
+}
+.rounded-8px{
+    border-radius: 8px;
+}
+.max-w-68{
+    max-width: 68px;
+}
+.max-w-50{
+    max-width: 50px;
+}
+.max-w-524{
+    max-width: 524px;
+}
+.max-w-631{
+    max-width: 631px;
+}
+.max-h-905{
+    max-height: 905px;
+}
+.max-w-554{
+    max-width: 554.37px;
+}
+.max-w-819{
+    max-width: 819px;
+}
+.max-w-968{
+    max-width: 968px;
+}
+.px_31{
+    padding-left: 31px;
+    padding-right: 31px;
+}
+.mt-366{
+    margin-top: 366px;
+}
+.mb-38{
+    margin-bottom: 38px;
+}
+.-bottom-10{
+    bottom: -10%;
+}
+/* -------====navbar====-----*/
+@media (max-width: 991.98px) {
+    .mobile_view {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(179.26deg, #1643C3 0.65%, #000000 183.69%);
+        transition: 300ms linear;
+        flex-direction: column;
+        z-index: 2;
+    }
+
+    .overflow_hidden {
+        overflow: hidden;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 35px;
+        min-height: 4px;
+        background-color: black;
+        transition: 300ms linear;
+    }
+
+    .cross .line1 {
+        transform: rotate(50deg) translate(18px, 16px);
+        background: white;
+        height: 5px;
+        width: 32px;
+        border-radius: 12px;
+
+    }
+
+    .cross .line2 {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    .cross .line3 {
+        transform: rotate(-50deg) translateY(-50%);
+        background: white;
+        height: 5px;
+        width: 32px;
+        border-radius: 12px;
+    }
+
+    .nav-menu {
+        color: var(--bs-teritary);
+        transition: all 300ms linear;
+        opacity: 0.8;
+    }
+
+    .nav-menu:hover {
+        color: var(--bs-teritary);
+    }
+
+
+}
+
+.nav-line:hover::after {
+    width: 100%;
+    transition: all 300ms linear;
+}
+
+.nav-line::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 2px;
+    border-radius: 15px;
+    background-color: white;
+    bottom: -12px;
+    transition: all 300ms linear;
+}
